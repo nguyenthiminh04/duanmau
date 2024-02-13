@@ -7,7 +7,7 @@ if (is_array($suasanpham)) {
     <div class="row2 font_title">
         <h1>SUA SAN PHAM</h1>
     </div>
-    <div class="row2 font_content">
+    <div class="row2 form_content" style="border: 1px solid #ccc; border-radius: 8px; margin-top: 20px; padding: 20px;">
         <form action="index.php?act=updateSanpham" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?= $id ?>">
             <div class="row2 mb10">
