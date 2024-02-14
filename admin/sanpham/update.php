@@ -35,7 +35,27 @@ if (is_array($suasanpham)) {
         <input type="text" style="height: 40px;" value="<?= $suasanpham['name'] ?>" name="tensanpham" required placeholder="Nhập vào tên sản phẩm">
         
     </div>
-        
+        <div class="row2 mb10">
+            <label for="" style="color: #000; text-transform: uppercase; margin-bottom: 20px;" >Giá sản phẩm</label>
+            <input type="text" style="height: 40px;" value="<?= $price ?>" name="gia" placeholder="Nhập vào giá sản phẩm" required>
+
+        </div>
+        <div class="row2 mb10">
+        <label for="" style="color: #000; text-transform: uppercase; margin-bottom: 20px;" >Ảnh sản phẩm</label>
+        <input type="file" class="form-control" name="image" style="height: 40px;">
+        <input type="hidden" class="form-control" value="<?= $oldImage ?>" name="oldImage" style="height: 40px;">
+        <img style="width: 300px; height:200px; margin: 20px 0; border: 1px solid #000; border-radius: 6px; padding:10px;" src="../../../minhnt_duanmau/upload/<?= $img ?>" alt="">
+
+        </div>
+        <div class="row2 mb10">
+                <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Mô tả sản phẩm</label> <br>
+                <textarea class="form-control" placeholder="Nhập mô tả của bạn" name="mota"  cols="20" rows="10"><?= $mota ?></textarea>
+            </div>
+            <div>
+                <input class="mr20" type="submit" name="suasanpham" value="CẬP NHẬT">
+                <input class="mr20" type="reset" value="NHẬP LẠI">
+                <a href="index.php?act=listsanpham" class="btn btn-primary">DANH SÁCH</a>
+            </div>
         </form>
     </div>
 </div>
