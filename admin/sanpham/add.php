@@ -4,13 +4,14 @@
     </div>
     <?php
         if(isset($themThanhCong) && $themThanhCong != "") {
+            $themThanhCong ="Them san pham thanh cong";
             ?>
                 <div style="font-size:25px;margin-top: 100px; background-color: greenyellow; border:1px solid green; border-radius:5px; padding:10px; text-align:center;">
                     <?=$themThanhCong?>
                 </div>
             <?php
         } else {
-            $themThanhCong = "";
+            $themThanhCong = "Loi!";
         }
     ?>
     <div class="row2 form_content" style="border: 1px solid #ccc; border-radius: 8px; margin-top: 20px; padding: 20px;">
@@ -30,7 +31,8 @@
             </div>
             <div class="row2 mb10 form_content_container">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Tên sản phẩm</label> <br>
-                <input type="text" style="height: 40px;" name="tensanpham" placeholder="Nhập vào tên sản phẩm" required>
+                <input type="text" style="height: 40px;" name="tensanpham" placeholder="Nhập vào tên sản phẩm" >
+                
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Giá sản phẩm</label> <br>
@@ -42,7 +44,7 @@
             </div>
             <div class="row2 mb10">
                 <label style="color:#000; text-transform: uppercase; margin-bottom: 20px;">Mô tả sản phẩm</label> <br>
-                <textarea class="form-control" placeholder="Nhập mô tả của bạn" name="mota"  cols="20" rows="10" required></textarea>
+                <textarea class="form-control" placeholder="Nhập mô tả của bạn" required name="mota"  cols="20" rows="10"></textarea>
             </div>
             <div>
                 <input class="mr20" type="submit" name="themsanpham" value="THÊM MỚI">

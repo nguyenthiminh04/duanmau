@@ -44,17 +44,17 @@
             <div class="mb" style="border: 1px solid #ccc; border-radius:5px; padding: 20px;">
                 <div class="group__dathang2">
                     <input type="radio" value="1" name="pttt">
-                    <img width="50px" src="../../tranvietanh_duanmau/img/cod.png" alt="">
+                    <img width="50px" src="../../minhnt_duanmau/img/cod.png" alt="">
                     <span>Thanh toán khi nhận hàng</span>
                 </div>
                 <div class="group__dathang2">
                     <input type="radio" value="2" name="pttt">
-                    <img width="50px" src="../../tranvietanh_duanmau/img/atm.png" alt="">
+                    <img width="50px" src="../../minhnt_duanmau/img/atm.png" alt="">
                     <span>Thanh toán ATM</span>
                 </div>
                 <div class="group__dathang2">
                     <input type="radio" value="3" name="pttt">
-                    <img width="50px" src="../../tranvietanh_duanmau/img/ol.png" alt="">
+                    <img width="50px" src="../../minhnt_duanmau/img/ol.png" alt="">
                     <span>Thanh toán online</span>
                 </div>
             </div>

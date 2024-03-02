@@ -152,16 +152,6 @@
         return $result;
     }
 
-    function sua_binhluan($id) {
-        $sql = "SELECT * FROM binhluan WHERE id = ".$id;
-        $result = pdo_query_one($sql);
-        return $result;
-    }
-
-    function update_binhluan($noidung,$ngaybinhluan,$id) {
-        $sql = "UPDATE binhluan SET noidung = '".$noidung."', ngaybinhluan = '".$ngaybinhluan."' WHERE id = ".$id;
-        pdo_execute($sql);
-    }
 
     function xoa_binhluan($id) {
         $sql = "DELETE FROM binhluan WHERE id = ".$id;

@@ -17,7 +17,22 @@
                         <th>EMAIL</th>
                         <th>THAO TÁC</th>
                     </tr>
-            
+                    <?php
+                        foreach ($listtaikhoan as $taikhoan) {
+                            extract($taikhoan);
+                            ?>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td><?= $id ?></td>
+                                    <td><?= $user ?></td>
+                                    <td><?= $email ?></td>
+                                    <td style="text-align: center;">
+                                        <a class="btn btn-success" href="index.php?act=danhsachbinhluan&idtk=<?= $id ?>">XEM BÌNH LUẬN</a>
+                                    </td>
+                                </tr>
+                            <?php
+                        }
+                    ?>
 
                 </table>
             </div>

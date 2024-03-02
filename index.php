@@ -75,7 +75,7 @@
                     if(is_array($checkuser)) {
                         $_SESSION['minhh'] = $checkuser;
                         // $success = "Đăng nhập thành công.";
-                        // header("Location: tranvietanh_duanmau/index.php");
+                        // header("Location: minhnt_duanmau/index.php");
                     } else {
                         $success = "Thông tin tài khoản hoặc mật khẩu không chính xác";
                     }

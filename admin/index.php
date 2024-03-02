@@ -52,7 +52,7 @@
             case "updateDanhmuc":
                 if(isset($_POST['suadanhmuc']) && ($_POST['suadanhmuc'])) {
                     $tenloai = $_POST['tenloai'];
-                    $iddm = $_POST['id'];
+                    $iddm  = $_POST['id'];
                     update_danhmuc($tenloai,$iddm);
                     header('location: index.php?act=listdanhmuc');
                 }
@@ -72,7 +72,51 @@
 
                     add_sanphamsanpham($iddm,$tensanpham,$gia,$filename,$mota);
                     $themThanhCong = "Thêm Sản Phẩm Mới Thành Công";
+                    // $isCheck = true;
+                    // if (!$tensanpham) {
+                    //  $isCheck = false;
+                    //  $errName ='Bạn không được để trống tên sản phẩm';
+                    // }
+                    // if (!$gia){
+                    //     $isCheck = false;
+                    //     $errPrice ='Bạn không được để giá sản phẩm';
+                    //    }
+                   
+                    // if (!$filename){
+                    //  $isCheck = false;
+                    //  $errFile ='Bạn không được để trống ảnh';
+                    // }
+                    // if (!$mota) {
+                    //     $isCheck = false;
+                    //     $errMota ='Bạn không được để trống nội dung';
+                    //    }
+                    //    add_sanphamsanpham($iddm,$tensanpham,$gia,$filename,$mota);
+                    //    $themThanhCong = "Thêm Sản Phẩm Mới Thành Công";
                 }
+                // if (isset($_POST['themmoi']) && $_POST['themmoi']) {
+                    // echo"<pre>";
+                    //  // print_r($_POST);
+                    //  // print_r($_FILES);
+
+  
+                    //  print_r([$tieude,$noidung,$filename,$iddm]);
+                    // echo"</pre>";
+ 
+                    // $isCheck = true;
+                    // if (!$tieude) {
+                    //  $isCheck = false;
+                    //  $errTieuDe ='Bạn không được để trống tiêu đề';
+                    // }
+                    // if (!$noidung) {
+                    //  $isCheck = false;
+                    //  $errNoiDung ='Bạn không được để trống nội dung';
+                    // }
+                    // if (!$filename){
+                    //  $isCheck = false;
+                    //  $errFileName ='Bạn không được để trống ảnh';
+                    // }
+ 
+                //  }
 
                 $select_danhmuc = loadall_danhmuc();
                 $danhsachsp = loadall_sanpham();
@@ -186,8 +230,28 @@
                     include "binhluan/listbinhluan.php";
                 }
                 break;
-    
-           
+            case "xoabinhluan";
+            if(isset($_GET['idbl']) && ($_GET['idbl'] > 0)) {
+                $idbl = $_GET['idbl'];
+                $idtk = $_GET['idtk'];
+                $xoabinhluan = xoa_binhluan($idbl);
+
+                header('location: index.php?act=danhsachbinhluan&idtk='.$idtk);
+
+            } else {
+                $idbl = "";
+            }
+            break;
+
+            case "thongke":
+                $listthongke = loadall_thongke();
+                include "thongke/listthongke.php";
+                break;
+
+            case "bieudo";
+                $listthongke = loadall_thongke();
+                include "bieudo.php";
+                break;
         
             default:
                 include "./home.php";

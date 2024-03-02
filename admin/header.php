@@ -18,17 +18,18 @@
         <!-- BIGIN HEADER -->
         <header style="background: none !important;">
             <div class="row mb header_admin">
-                <h1>Admin</h1>
+                <h1>TRANG QUẢN LÝ</h1>
             </div>
             <a style="margin-bottom: 30px; margin-left: 0 !important;" href="/minhnt_duanmau/index.php" class="btn btn-success">Quay về trang người dùng</a>
             <div class="row mb menu">
                 <ul>
                     <li><a href="index.php">Trang chủ</a></li>
                     <li><a href="index.php?act=listdanhmuc">Danh mục</a></li>
-                    <li><a href="index.php?act=listsanpham">Hàng hóa</a></li>
+                    <li><a href="index.php?act=listsanpham">Sản phẩm</a></li>
                     <li><a href="index.php?act=listkhachhang">Khách hàng</a></li>
                     <li><a href="index.php?act=listtaikhoankhachhang">Bình luận</a></li>
                     <li><a href="index.php?act=thongke">Thống kê</a></li>
+                    <li><a href="index.php?act=tintuc">Tin tức</a></li>
                 </ul>
             </div>
         </header>

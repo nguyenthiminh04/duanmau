@@ -29,12 +29,7 @@
                             <input type="submit" class="submit__search" name="submit" value="Tìm kiếm">
                         </form>
                     </div>
-                    <div class="contact__ios" style="position: absolute; right: 120px; top: 35px;">
-                        <label class="switch" class="">
-                            <input name="changeColor" type="checkbox" class="checkClass checked__input">
-                            <span class="contactSlider"></span>
-                        </label>
-                    </div>
+                   
                 </div>
                 <div class="header__menu_nav hd_navmenu" style="margin-top: 50px;">
                     <ul>

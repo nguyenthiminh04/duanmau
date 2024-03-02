@@ -39,7 +39,7 @@
                         // phần này check nếu tài khoản có role == 0 thì đó là tài khoản admin và cho <li class="form_li"><a href="admin/index.php">Đăng nhập admin</a></li>
                         if($role == 1) {
                             ?>
-                                <li class="form_li"><a href="admin/index.php">Đăng nhập admin</a></li>
+                                <li class="form_li"><a href="admin/index.php">Đăng nhập ADMIN</a></li>
                             <?php
                         }
                     ?>
